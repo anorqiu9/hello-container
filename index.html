@@ -3,18 +3,39 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Expires" content="0" />
-<style>
-.myDiv {
-  background-color: lightblue;
-  text-align: center;
-}
-</style>
+  <style type="text/css">
+  /* Just some nice colors */
+  body {background: #363; color: #FF0; font-size: large;
+    text-shadow: black 0.2em 0.2em 0.2em}
+  a:link, a:visited {color: inherit; text-decoration: underline}
+  a:hover {text-shadow: white 0 0 0.2em}
+
+  /* Vertical centering: make div as large as viewport and use table layout */
+  div.container {top: 0; left: 0; width: 100%; height: 100%;
+    position: absolute; display: table}
+  p {display: table-cell; vertical-align: middle}
+
+  /* Horizontal centering of image: set left & right margins to 'auto' */
+  img.displayed {display: block; margin: 1em auto}
+
+  /* Also center the lines in the paragraph */
+  p {text-align: center}
+
+  body, html {height: 100%; margin: 0; padding: 0}
+
+  /* Keep the translations off to the side */
+  #language {display: none}
+  #translations {position: absolute; top: 0; right: 0; color: white;
+    text-shadow: none; margin: 0.5em; font-size: small;
+    background: #474; border-radius: 1em; padding: 0 0.5em}
+  #translations h2, #translations p, #translations a {display: block;
+    text-align: center; font-size: 100%}
+  </style>
 </head>
 <body>
-
-<div class="myDiv">
-  <h2>Hello Container World......!</h2>
-</div>
+<div class="container">
+   <p>Hello Container World!<img alt="[image of a sheep]" class="displayed" src="https://miro.medium.com/max/2404/1*JUOITpaBdlrMP9D__-K5Fw.png"> 
+  </p></div>
 
 </body>
 </html>
